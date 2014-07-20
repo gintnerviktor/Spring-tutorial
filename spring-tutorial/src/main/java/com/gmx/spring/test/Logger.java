@@ -8,18 +8,9 @@ public class Logger {
 	private LogWriter consolwriter;
 	private LogWriter filewriter;
 	
-	public void setConsolWriter(LogWriter consolwriter) {
+	public Logger (ConsolWriter consolwriter, FileWriter filewriter) {
 		this.consolwriter = consolwriter;
-	}
-
-	/**
-	 * setFileWriter
-	 * A beanek-ben vigyázni kell az id ban található névre, mert a setFileWriter -> fileWriter lesz, azaz elmarad a set és a az első
-	 * betű kis méretűre vált !!!
-	 * @param filewriter
-	 */
-	public void setFileWriter(LogWriter filewriter) {
-		this.filewriter = filewriter;
+		this.filewriter =  filewriter;
 	}
 
 	/**
