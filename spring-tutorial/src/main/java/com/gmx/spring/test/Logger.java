@@ -1,14 +1,14 @@
 package com.gmx.spring.test;
 
 public class Logger {
-	private ConsolWriter consolwriter;
-	private FileWriter filewriter;
+	private LogWriter consolwriter;
+	private LogWriter filewriter;
 	
-	public void setConsolwriter(ConsolWriter consolwriter) {
+	public void setConsolwriter(LogWriter consolwriter) {
 		this.consolwriter = consolwriter;
 	}
 
-	public void setFilewriter(FileWriter filewriter) {
+	public void setFilewriter(LogWriter filewriter) {
 		this.filewriter = filewriter;
 	}
 
