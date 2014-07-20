@@ -7,6 +7,6 @@
 	<bean id="logger" class="com.gmx.spring.test.Logger"
 		autowire="byName">
 	</bean>
-	<bean id="consolwriter" class="com.gmx.spring.test.ConsolWriter"></bean>
-	<bean id="filewriter" class="com.gmx.spring.test.FileWriter"></bean>
+	<bean id="consolWriter" class="com.gmx.spring.test.ConsolWriter"></bean>
+	<bean id="fileWriter" class="com.gmx.spring.test.FileWriter"></bean>
 </beans>
