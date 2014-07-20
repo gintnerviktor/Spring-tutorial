@@ -9,11 +9,10 @@ public class App {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/gmx/spring/test/beans/beans.xml");
 		
-		Person person = (Person) context.getBean("person");
+		Logger logger = (Logger) context.getBean("logger");
 		
-		person.setTaxId(6666);
-		
-		System.out.println(person);
+		logger.writeConsol("Hello Consol !");
+		logger.writeFile("Hello File!");
 		
 		((ClassPathXmlApplicationContext) context).close();
 
