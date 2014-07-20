@@ -4,7 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
 	default-init-method="onInit">
 
-	<bean id="logger" class="com.gmx.spring.test.Logger"></bean>
+	<bean id="logger" class="com.gmx.spring.test.Logger"
+		autowire="byType">
+	</bean>
 	<bean id="consolwriter" class="com.gmx.spring.test.ConsolWriter"></bean>
 	<bean id="filewriter" class="com.gmx.spring.test.FileWriter"></bean>
 </beans>
