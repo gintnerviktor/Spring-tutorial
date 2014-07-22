@@ -7,6 +7,8 @@
 	<bean id="logger" class="com.gmx.spring.test.Logger"
 		autowire="byName">
 	</bean>
-	<bean id="consolWriter" class="com.gmx.spring.test.ConsolWriter"></bean>
-	<bean id="fileWriter" class="com.gmx.spring.test.FileWriter"></bean>
+	<bean class="com.gmx.spring.test.ConsolWriter"
+		name="consolWriter">
+	</bean>
+	<bean class="com.gmx.spring.test.FileWriter" name="fileWriter"></bean>
 </beans>

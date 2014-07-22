@@ -11,6 +11,7 @@ public class App {
 		
 		Logger logger = (Logger) context.getBean("logger");
 		
+		
 		logger.writeConsol("Hello Consol !");
 		logger.writeFile("Hello File!");
 		

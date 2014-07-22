@@ -4,7 +4,7 @@ package com.gmx.spring.test;
  * @author viktor
  *
  */
-public class Logger {
+public class Logger{
 	private LogWriter consolwriter;
 	private LogWriter filewriter;
 	
