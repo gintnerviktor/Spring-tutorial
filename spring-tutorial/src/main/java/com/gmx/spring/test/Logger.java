@@ -1,22 +1,23 @@
 package com.gmx.spring.test;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Logger {
 	
-	@Autowired
 	private ConsolWriter consolwriter;
+	private LogWriter filewriter;
+	
 	@Autowired
-	private FileWriter filewriter;
-	
-	
-	public void setConsolwriter(ConsolWriter consolwriter) {
-		this.consolwriter = consolwriter;
+	@Qualifier("egyedi")
+	public void setConsolWriter(ConsolWriter alma) {
+		this.consolwriter = alma;
 	}
 
-	
-	public void setFilewriter(FileWriter filewriter) {
-		this.filewriter = filewriter;
+	@Autowired
+	@Qualifier("citrom")
+	public void setFileWriter(LogWriter banan) {
+		this.filewriter = banan;
 	}
 
 	public void writeConsol(String text) {
